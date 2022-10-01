@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------ION ICON ----------- -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- --------GOOGLE FONTS---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ----------------------LINK CSS------------ -->
+    <link rel="stylesheet" href="css/humidity_tempareture.css">
+    <link rel="stylesheet" href="css/contollLed.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Humidity and Tempareture</title>
+</head>
+
+<body>
+    <!-- --------------NAV MENU------------ -->
+    <nav>
+        <div class=" nav__container">
+            <a href="index.html">
+                <h4>SMARTHOME</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="controlLed.html">Control Leds</a></li>
+                <li><a href="humidity_temperature.html">Humidity and Temperature data</a></li>
+                <li><a href="gas.html">Gas data</a></li>
+            </ul>
+
+            <div class="nav__login">
+                <!-- <div class="avata">
+                    <img src="img/10.jpg">
+                </div>
+                <div class="title__login">
+                    <div class="title" style="font-size: 1.2rem; ">
+                        <h5>Nguyen Trung Thanh</h5>
+                    </div>
+                    <div class="sub__title" style="font-size: 0.9rem; opacity: 0.5; font-weight:normal; ">
+                        Administrator
+                    </div>
+                </div> -->
+                <a href="login.html">
+                    <h4>Login</h4>
+                </a>
+                <button class="btn__menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <button class="btn-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====================HUMIDITY=================== -->
+    <section class="humidity">
+        <div class="humidity__container container">
+            <!-- --------Lưu dữ liệu vào bảng hàng tuần--------- -->
+            <h4>TABLE HUMIDITY</h4>
+            <div class="status__humidity">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Humidity</td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ---hiển thị dữ liệu dưới hạng plot--- -->
+            <h4>Humidity live plot</h4>
+            <div class="show__plot-humidity">
+                <p><i>Hiển thị dữ liệu dưới dạng biểu đồ</i></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================TEMPARETURE=================== -->
+    <section class="humidity">
+        <div class="humidity__container container">
+            <!-- --------Lưu dữ liệu vào bảng hàng tuần--------- -->
+            <h4>TABLE TEMPARETURE</h4>
+            <div class="temparetur" style="margin-top: 2rem;">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Humidity</td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ---hiển thị dữ liệu dưới hạng plot--- -->
+            <h4>Tempareture live plot</h4>
+            <div class="show__plot-tempareture">
+                <p><i>Hiển thị dữ liệu dưới dạng biểu đồ</i></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------------SCRIPT------------ -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

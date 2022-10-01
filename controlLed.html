@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------ION ICON ----------- -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- --------GOOGLE FONTS---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ---------LINK CSS----- -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contollLed.css">
+    <title>Control Leds</title>
+</head>
+
+<body>
+
+    <!-- --------------NAV MENU------------ -->
+    <nav>
+        <div class=" nav__container">
+            <a href="index.html">
+                <h4>SMARTHOME</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="controlLed.html">Control Leds</a></li>
+                <li><a href="humidity_Temperature.html">Humidity and Temperature data</a></li>
+                <li><a href="gas.html">Gas data</a></li>
+            </ul>
+
+            <div class="nav__login">
+                <!-- <div class="avata">
+                    <img src="img/10.jpg">
+                </div>
+                <div class="title__login">
+                    <div class="title" style="font-size: 1.2rem; ">
+                        <h5>Nguyen Trung Thanh</h5>
+                    </div>
+                    <div class="sub__title" style="font-size: 0.9rem; opacity: 0.5; font-weight:normal; ">
+                        Administrator
+                    </div>
+                </div> -->
+                <a href="login.html">
+                    <h4>Login</h4>
+                </a>
+                <button class="btn__menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <button class="btn-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ------------------CONTROL LEDS-------------------- -->
+    <section class="controllLed">
+        <div class="container led__container">
+            <div class="led__top">
+                <div class="led__room">
+                    <div class="room__content">
+                        <div class="room__title">
+                            <h4>LIVING ROOM</h4>
+                            <button class="btnOn">ON</button>
+                            <button class="btnOff">OFF</button>
+                        </div>
+                        <div class="led__img">
+                            <img src="/img/led-bulb.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="led__room">
+                    <div class="room__content" style="background-color: rgb(185, 211, 238);">
+                        <div class="room__title">
+                            <h4>BED ROOM 1</h4>
+                            <button class="btnOn">ON</button>
+                            <button class="btnOff">OFF</button>
+                        </div>
+                        <div class="led__img">
+                            <img src="/img/led-bulb.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="led__room">
+                    <div class="room__content" style="background-color:
+                    rgb(141, 238, 238);">
+                        <div class="room__title">
+                            <h4>BED ROOM 2</h4>
+                            <button class="btnOn">ON</button>
+                            <button class="btnOff">OFF</button>
+                        </div>
+                        <div class="led__img">
+                            <img src="/img/led-bulb.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="led__middle">
+                <div class="led__room">
+                    <div class="room__content" style="background-color:
+                    rgb(204, 0, 153);">
+                        <div class="room__title">
+                            <h4>KITCHEN ROOM</h4>
+                            <button class="btnOn">ON</button>
+                            <button class="btnOff">OFF</button>
+                        </div>
+                        <div class="led__img">
+                            <img src="/img/led-bulb.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="led__room">
+                    <div class="room__content" style="background-color:
+                    rgb(238, 213, 183);">
+                        <div class="room__title">
+                            <h4>TOILET ROOM</h4>
+                            <button class="btnOn">ON</button>
+                            <button class="btnOff">OFF</button>
+                        </div>
+                        <div class="led__img">
+                            <img src="/img/led-bulb.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================STATUS LED ===================== -->
+            <div class="status__led">
+                <table>
+                    <tr>
+                        <th>Room Name</th>
+                        <th>Status</th>
+                        <th>Time On</th>
+                        <th>Time Off</th>
+                    </tr>
+                    <tr>
+                        <td>Living Room</td>
+                        <td>
+                            <h6 id="pk"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepkon"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepkoff"></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bed Room 1</td>
+                        <td>
+                            <h6 id="pn1"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepn1on"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepn1off"></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bed Room 2</td>
+                        <td>
+                            <h6 id="pn2"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepn2on"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timepn2off"></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kitchen Room</td>
+                        <td>
+                            <h6 id="kr"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timekron"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timekroff"></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Toilet Room</td>
+                        <td>
+                            <h6 id="tr"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timetron"></h6>
+                        </td>
+                        <td>
+                            <h6 id="timetroff"></h6>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---LINK SCRIPT------- -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
